@@ -1,0 +1,13 @@
+baseURL = "https://dpb587.github.io/ssoca/"
+languageCode = "en-us"
+title = "dpb587/ssoca"
+paginate = 32
+theme = "book-fork"
+contentDir = "repo/docs"
+googleAnalytics = "UA-37464314-3"
+
+[params]
+  BookShowToC = true
+  BookMenuBundle = "/_menu"
+  BookRepo = "https://github.com/dpb587/ssoca"
+  BookEditPath = "edit/master/docs"

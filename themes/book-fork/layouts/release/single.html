@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <article class="markdown">
+    {{ $x := .Title }}
+    <h1>{{ .Title }}</h1>
+
+    <article class="markdown">
+      <p>Released {{ .Date.Format "January 2, 2006" }}</p>
+
+      {{ with .Content }}
+        <h2>Release Notes</h2>
+
+        {{- . -}}
+      {{ end }}
+
+      <h2>Artifacts</h2>
+
+      <pre><code>                                                          sha256  file{{ range $metalink := .Site.Data.releaseArtifacts.metalink }}{{ range $file := $metalink.files }}{{ if eq ( printf "v%s" $file.version ) $x }}
+{{ range $hash := .hashes }}{{ if eq $hash.type "sha-256" }}{{ $hash.hash }}{{ end }}{{ end }}  <a href="{{ ( index .urls 0 ).url }}">{{ .name }}</a>{{ end }}{{ end }}{{ end }}</code></pre>
+    </article>
+  </article>
+{{ end }}

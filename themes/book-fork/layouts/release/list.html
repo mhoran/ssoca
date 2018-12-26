@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <article class="markdown">
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ $paginator := .Paginate (where .Pages "Params.hidden" "ne" true) }}
+    {{ range $idx, $page := sort .Paginator.Pages }}{{ with $page }}
+      <article>
+        <h2>
+          <a href="{{ .Permalink }}">{{ .Title }}</a> ({{ .Date.Format "January 2, 2006" }})
+        </h2>
+
+        {{ if eq $idx 0 }}
+          <div class="markdown">
+            {{ .Content }}
+          </div>
+        {{ end }}
+      </article>
+    {{ end }}{{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+  </article>
+{{ end }}
