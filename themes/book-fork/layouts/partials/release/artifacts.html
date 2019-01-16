@@ -1,6 +1,6 @@
-{{ $x := .Title }}
+{{ $showVersion := .Title }}
 {{ $artifacts := slice }}
-{{ range $metalink := .Site.Data.releaseArtifacts.metalink }}{{ range $file := $metalink.files }}{{ if eq ( printf "v%s" $file.version ) $x }}{{ $artifacts = $artifacts | append $file }}{{ end }}{{ end }}{{ end }}
+{{ range $metalink := .Site.Data.releaseArtifacts.metalink }}{{ range $file := $metalink.files }}{{ if eq ( printf "v%s" $file.version ) $showVersion }}{{ $artifacts = $artifacts | append $file }}{{ end }}{{ end }}{{ end }}
 
 {{ with $artifacts }}
   <pre><code>                                                          sha256  file{{ range $file := . }}
