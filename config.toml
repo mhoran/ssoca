@@ -1,9 +1,8 @@
-baseURL = "https://dpb587.github.io/ssoca/"
+baseURL = "https://dpb587.github.io/ssoca/" # hostname also hard-coded in analytics.html
 languageCode = "en-us"
 title = "dpb587/ssoca"
 paginate = 32
 theme = "book-fork"
-contentDir = "repo/docs"
 googleAnalytics = "UA-37464314-3"
 
 [params]
