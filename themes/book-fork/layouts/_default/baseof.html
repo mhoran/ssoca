@@ -5,6 +5,7 @@
 <head>
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
+  {{ block "meta" . }}{{ end }}
 </head>
 
 <body>
@@ -28,11 +29,11 @@
 
     <div class="book-page">
       {{ partial "docs/mobile-header" . }}
-      {{ template "main" . }}
+      {{ block "main" . }}{{ end }}
       {{ partial "docs/git-footer" . }}
     </div>
 
-    {{ template "toc" . }}
+    {{ partial "docs/toc" . }}
   </main>
 
   {{ partial "docs/inject/body" . }}
