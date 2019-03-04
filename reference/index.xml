@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/reference/</link>
+    <description>Recent content in Overview on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Client Installation</title>
+      <link>https://dpb587.github.io/ssoca/reference/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/installation/</guid>
+      <description>Client Installation Most users will be executing the ssoca client binary from their workstations which require an initial setup.
+Dependencies First, users must install the ssoca client binary. After you install using one of the following methods, run ssoca version to verify. This only needs to happen once per workstation.
+Homebrew or Linuxbrew For users of Homebrew (macOS) or Linuxbrew, you may use the dpb587/homebrew-tap tap to install the latest official binaries.</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/configuration/</guid>
+      <description>Configuration The server is configured through a YAML file with several top-level sections.
+For a more full example, refer to the server.conf from the BOSH release.
+server The first section is server which configures the HTTPS listener&amp;hellip;
+server: # tls configuration certificate_path: ~ # PEM-formatted certificate; required private_key_path: ~ # PEM-formatted private key; required # bind settings host: 0.0.0.0 # default port: 18705 # default # optional redirects redirects: root: ~ # redirect of /; optional auth_failure: ~ # optional auth_success: ~ # optional # optionally configure proxies you expect to receive traffic from trusted_proxies: - 127.</description>
+    </item>
+    
+    <item>
+      <title>Deployment</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/deployment/</guid>
+      <description>Deployment BOSH Currently, the easiest way to operate ssoca is with BOSH using the ssoca release. Review the documentation in that repository. If you&amp;rsquo;re looking to get started, see dpb587/ssoca-starter-bosh-deployment for some default conventions.
+Standalone Alternatively, run ssoca-server and provide a path to the YAML server configuration file.</description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://dpb587.github.io/ssoca/reference/dev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/dev/</guid>
+      <description>Development Some notes to remember when working from source&amp;hellip;
+Commits Before committing, run the bin/pre-commit script to&amp;hellip;
+ regenerate fakes go fmt source files run all tests build all binaries regenerate client command docs  Review for unexpected changes before including them in your commit.
+Shortcuts Some shortcuts instead of the built-in go commands&amp;hellip;
+go run  bin/ssoca-client &amp;ndash; shortcut to run the client from source in any directory bin/ssoca-server &amp;ndash; shortcut to run the server from source in any directory  go build Run bin/build to build both client and server for all supported architectures and operating systems.</description>
+    </item>
+    
+    <item>
+      <title>Frontend UI</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/ui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/ui/</guid>
+      <description>Frontend UI A simple UI is included in the server/ui directory to support users directly browsing the the ssoca endpoint. It can be configured with the docroot service and supports showing initial configuration steps, binary downloads, and minor customizations.
+Parameters The following optional settings may be configured in the env.metadata to affect the appearance.
+ ui.color &amp;ndash; a known color name for the background of pages ui.link.(title) &amp;ndash; URL(s) to external documentation or resources which may be useful to the user ui.</description>
+    </item>
+    
+    <item>
+      <title>Logging</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/logging/</guid>
+      <description>Logging The server process emits logs to standard output in JSON format.
+Global Fields The following fields will be present on every message.
+ level &amp;ndash; severity of the message (i.e. DEBUG, INFO, WARN, ERROR, FATAL, PANIC) msg &amp;ndash; a brief summary describing the event which occurred (e.g. Signed ssh certificate) time &amp;ndash; time the message was logged in ISO8601 format (e.g. 2017-02-21T02:12:22Z)  HTTP Fields The following fields will be present on messages related to an HTTP request or response.</description>
+    </item>
+    
+    <item>
+      <title>Templating</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/templating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/templating/</guid>
+      <description>Templating Some configuration values may support dynamic, runtime templating. Some services may use this to provide additional, user or request-specific customization. The following lookups are available in templated values.
+Configuration settings which support templating are noted with templatized in documentation.
+Context  Request (net/http.Request) &amp;ndash; the current request Token &amp;ndash; the current authentication token  Name &amp;ndash; personal name (if available) Email &amp;ndash; email address (if available) Username &amp;ndash; username (if available) Groups &amp;ndash; a list of scopes  Contains(string) &amp;ndash; check if a scope is available Matches(string) &amp;ndash; check if a scope matches the given pattern    Examples Using the ssh service as an example:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ssoca openvpn create-onc-profile | dpb587/ssoca</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://dpb587.github.io/ssoca/normalize.min.css">
+
+<link rel="stylesheet" href="/ssoca/book.min.60f61c3922248f4d0720c4556699f36d8643d39368cf65ee808037435737093e.css">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dpb587.github.io/ssoca/reference/service/openvpn/create-onc-profile-cmd/">
+<meta property="og:site_name" content="dpb587/ssoca" />
+<meta property="og:title" content="ssoca openvpn create-onc-profile">
+
+
+  
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+        <h2 class="book-brand">
+  <a href="https://dpb587.github.io/ssoca/">dpb587/ssoca</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/">Overview</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/installation/">Client Installation</a></li>
+<li>Services
+
+<ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/auth/">Authentication</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/docroot/">Document Root</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/download/">Download</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/env/">Environment</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/openvpn/">OpenVPN</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/ssh/">SSH</a></li>
+</ul></li>
+<li>Server Usage
+
+<ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/configuration/">Configuration</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/auth/authn/">Authentication</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/auth/authz/">Authorization</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/certauth/">Certificate Authorities</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/logging/">Logging</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/ui/">Frontend UI</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/deployment/">Deployment</a></li>
+</ul></li>
+<li><a href="https://dpb587.github.io/ssoca/release/">Official Releases</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/dev/">Development Notes</a></li>
+<li><a href="https://github.com/dpb587/ssoca">View on GitHub</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="https://dpb587.github.io/ssoca/svg/menu.svg" />
+  </label>
+  <strong>ssoca openvpn create-onc-profile</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="ssoca-openvpn-create-onc-profile"><code>ssoca openvpn create-onc-profile ...</code></h1>
+
+<p>Create an ONC profile</p>
+
+<pre><code>Usage:
+  ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-onc-profile [create-onc-profile-OPTIONS]
+
+Application Options:
+      --config=              Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG]
+  -e, --environment=         Environment name [$SSOCA_ENVIRONMENT]
+      --log-level=           Log level (default: WARN) [$SSOCA_LOG_LEVEL]
+
+Help Options:
+  -h, --help                 Show this help message
+
+[openvpn command options]
+
+    Establish OpenVPN connections to remote servers:
+      -s, --service=         Service name (default: openvpn) [$SSOCA_SERVICE]
+
+[create-onc-profile command options]
+          --skip-auth-retry  Skip interactive authentication retries when logged out
+          --name=            Specific network configuration name to use
+</code></pre>
+
+<h2 id="usage-details">Usage Details</h2>
+
+<p>Chrome OS uses <a href="https://chromium.googlesource.com/chromium/src/+/master/components/onc/docs/onc_spec.md">Open Network Configuration</a> files for VPN settings. Use the <code>create-onc-profile</code> command to generate a compatible file. Once generated and saved in a file:</p>
+
+<ul>
+<li>Go to <code>chrome://net-internals/#chromeos</code></li>
+<li>From [Import ONC file], click [Choose File]
+
+<ul>
+<li>Select your <code>*.onc</code> file</li>
+<li>Click [Open]</li>
+<li>No confirmation of success or failure will be given</li>
+</ul></li>
+<li>Go to <code>chrome://settings/networks?type=VPN</code> and verify the VPN is present</li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>If the VPN connection is not added or updated, visit <code>chrome://system</code> and review <code>Profile[0] chrome_user_log</code> for details (search for <code>onc_validator.cc</code> or <code>onc</code>).</p>
+
+<p>If the VPN connection will not successfully connect, visit <code>chrome://system</code> and review <code>netlog</code> for <code>openvpn</code> for connection details (search for <code>openvpn</code>).</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/dpb587/ssoca/edit/master/docs/reference/service/openvpn/create-onc-profile-cmd.md" target="_blank" rel="noopener">
+      <img src="https://dpb587.github.io/ssoca/svg/code-fork.svg" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+    </div>
+
+    
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#ssoca-openvpn-create-onc-profile"><code>ssoca openvpn create-onc-profile ...</code></a>
+<ul>
+<li><a href="#usage-details">Usage Details</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+  </main>
+
+  
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37464314-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    if ('dpb587.github.io' != window.location.hostname) return;
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+
+</html>

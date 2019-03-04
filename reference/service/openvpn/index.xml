@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenVPN (openvpn) on dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/reference/service/openvpn/</link>
+    <description>Recent content in OpenVPN (openvpn) on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/reference/service/openvpn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>External OpenVPN Server Configuration</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/external-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/external-configuration/</guid>
+      <description>External OpenVPN Server Configuration OpenVPN is often deployed with CA-based authentication, which is a prerequisite for this service. Ensure the following directives are configured on the OpenVPN server.
+ca_crt ... crl_pem ...  Renegotiation &amp;amp; Disconnects By default, OpenVPN attempts to renegotiate the data channel once every hour. Using short-lived certificates will cause the server to terminate the connection when renegotiation occurs (because the certificate has expired). Some clients may attempt to reconnect automatically, however there will typically be a brief interruption in network connectivity.</description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn base-profile</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/base-profile-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/base-profile-cmd/</guid>
+      <description> ssoca openvpn base-profile ... Show the base connection profile of the OpenVPN server
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] base-profile [base-profile-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [base-profile command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn create-launchd-service</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/create-launchd-service-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/create-launchd-service-cmd/</guid>
+      <description>ssoca openvpn create-launchd-service ... Create a launchd service
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-launchd-service [create-launchd-service-OPTIONS] [DESTINATION-DIR] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [create-launchd-service command options] --skip-auth-retry Skip interactive authentication retries when logged out --exec-ssoca= Path to the ssoca binary (default: ssoca) --name= Specific file name to use for *.</description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn create-onc-profile</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/create-onc-profile-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/create-onc-profile-cmd/</guid>
+      <description>ssoca openvpn create-onc-profile ... Create an ONC profile
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-onc-profile [create-onc-profile-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [create-onc-profile command options] --skip-auth-retry Skip interactive authentication retries when logged out --name= Specific network configuration name to use  Usage Details Chrome OS uses Open Network Configuration files for VPN settings.</description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn create-profile</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/create-profile-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/create-profile-cmd/</guid>
+      <description> ssoca openvpn create-profile ... Create and sign an OpenVPN configuration profile
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-profile [create-profile-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [create-profile command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn create-tunnelblick-profile</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/create-tunnelblick-profile-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/create-tunnelblick-profile-cmd/</guid>
+      <description>ssoca openvpn create-tunnelblick-profile ... Create a Tunnelblick profile
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-tunnelblick-profile [create-tunnelblick-profile-OPTIONS] [DESTINATION-DIR] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [create-tunnelblick-profile command options] --skip-auth-retry Skip interactive authentication retries when logged out --exec-ssoca= Path to the ssoca binary (default: ssoca) --name= Specific file name to use for *.</description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn exec</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/exec-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/exec-cmd/</guid>
+      <description> ssoca openvpn exec ... Execute openvpn to connect to the remote server (aliases: connect)
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] exec [exec-OPTIONS] [EXTRA...] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [exec command options] --skip-auth-retry Skip interactive authentication retries when logged out --exec= Path to the openvpn binary --reconnect Reconnect on connection disconnects --static-certificate Write a static certificate in the configuration instead of dynamic renewals --sudo Execute openvpn with sudo [exec command arguments] EXTRA: Additional arguments to pass to openvpn  </description>
+    </item>
+    
+  </channel>
+</rss>

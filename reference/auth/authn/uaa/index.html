@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Foundry UAA (uaa) authentication | dpb587/ssoca</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://dpb587.github.io/ssoca/normalize.min.css">
+
+<link rel="stylesheet" href="/ssoca/book.min.60f61c3922248f4d0720c4556699f36d8643d39368cf65ee808037435737093e.css">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dpb587.github.io/ssoca/reference/auth/authn/uaa/">
+<meta property="og:site_name" content="dpb587/ssoca" />
+<meta property="og:title" content="Cloud Foundry UAA (uaa) authentication">
+
+
+  
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+        <h2 class="book-brand">
+  <a href="https://dpb587.github.io/ssoca/">dpb587/ssoca</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/">Overview</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/installation/">Client Installation</a></li>
+<li>Services
+
+<ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/auth/">Authentication</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/docroot/">Document Root</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/download/">Download</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/env/">Environment</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/openvpn/">OpenVPN</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/ssh/">SSH</a></li>
+</ul></li>
+<li>Server Usage
+
+<ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/configuration/">Configuration</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/auth/authn/">Authentication</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/auth/authz/">Authorization</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/certauth/">Certificate Authorities</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/logging/">Logging</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/ui/">Frontend UI</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/deployment/">Deployment</a></li>
+</ul></li>
+<li><a href="https://dpb587.github.io/ssoca/release/">Official Releases</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/dev/">Development Notes</a></li>
+<li><a href="https://github.com/dpb587/ssoca">View on GitHub</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="https://dpb587.github.io/ssoca/svg/menu.svg" />
+  </label>
+  <strong>Cloud Foundry UAA (uaa) authentication</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="cloud-foundry-uaa-uaa">Cloud Foundry UAA (<code>uaa</code>)</h1>
+
+<p>Cloud Foundry UAA authenticates users from an external UAA server. Users authenticate via CLI prompts or are redirected to UAA and given a token for their CLI usage.</p>
+
+<h2 id="server-configuration-options">Server Configuration Options</h2>
+
+<ul>
+<li><strong><code>url</code></strong> &ndash; the address of the UAA server</li>
+<li><strong><code>public_key</code></strong> &ndash; a PEM-formatted public key for verifying JWT tokens</li>
+<li><strong><code>client_id</code></strong> &ndash; the Client ID for authenticating users</li>
+<li><code>client_secret</code> &ndash; the Client secret for authenticating users</li>
+<li><code>ca_certificate</code> &ndash; a PEM-formatted certificate for trusting HTTPS connections to the UAA server</li>
+<li><code>prompts</code> &ndash; a list of prompts to show the user when they are authenticating</li>
+</ul>
+
+<p><em>Reminder</em>: Client ID and Secret are provided to <code>ssoca-client</code> in order for them to be able to connect to UAA. These tokens must not be considered secret.</p>
+
+<h2 id="authentication-scopes">Authentication Scopes</h2>
+
+<p>All scopes propagated by the UAA server will be available in the user&rsquo;s authentication token.</p>
+
+<h2 id="uaa-client-configuration">UAA Client Configuration</h2>
+
+<p>In order for <code>ssoca-client</code> to connect to UAA, you will need to configure a UAA client for it to use. The following configures <a href="https://bosh.io/jobs/uaa?source=github.com/cloudfoundry/uaa-release&amp;version=67.0#p%3duaa.clients"><code>uaa</code></a> with a <code>ssoca_client</code> ID (no secret), which is allowed to propagate scopes named <code>env.*</code>.</p>
+
+<pre><code>uaa:
+  clients:
+    ssoca_client:
+      override: true
+      authorized-grant-types: password,refresh_token
+      scope: openid,env.*
+      authorities: uaa.none
+      access-token-validity: 120 # 2 min
+      refresh-token-validity: 86400 # 1 day
+      secret: &quot;&quot;
+</code></pre>
+</article>
+
+      
+<div class="align-center book-git-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/dpb587/ssoca/edit/master/docs/reference/auth/authn/uaa/_index.md" target="_blank" rel="noopener">
+      <img src="https://dpb587.github.io/ssoca/svg/code-fork.svg" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+    </div>
+
+    
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#cloud-foundry-uaa-uaa">Cloud Foundry UAA (<code>uaa</code>)</a>
+<ul>
+<li><a href="#server-configuration-options">Server Configuration Options</a></li>
+<li><a href="#authentication-scopes">Authentication Scopes</a></li>
+<li><a href="#uaa-client-configuration">UAA Client Configuration</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+  </main>
+
+  
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37464314-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    if ('dpb587.github.io' != window.location.hostname) return;
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+
+</html>

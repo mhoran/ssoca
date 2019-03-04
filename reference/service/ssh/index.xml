@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH (ssh) on dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/reference/service/ssh/</link>
+    <description>Recent content in SSH (ssh) on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/reference/service/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>External SSH Server Configuration</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/ssh/external-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/ssh/external-configuration/</guid>
+      <description>External SSH Server Configuration By default, OpenSSH relies on PAM and Public Key authentication (authorized_keys). To use this service, you must configure the OpenSSH server to trust users presenting a certificate which has been signed by a particular certificate authority.
+First, you should generate the public key of your certificate authority in OpenSSH format. You can use ssh-keygen and give it the private key of the certificate authority (this generates a public key and is not secret).</description>
+    </item>
+    
+    <item>
+      <title>ssoca ssh agent</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/ssh/agent-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/ssh/agent-cmd/</guid>
+      <description>ssoca ssh agent ... Start an SSH agent
+Usage: ssoca [OPTIONS] ssh [ssh-OPTIONS] agent [agent-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [ssh command options] Establish SSH connections to remote servers: -s, --service= Service name (default: ssh) [$SSOCA_SERVICE] [agent command options] --skip-auth-retry Skip interactive authentication retries when logged out --foreground Stay in foreground --socket= Socket path (ensure the directory has restricted permissions)  Usage Details This agent follows the ssh-agent protocol to dynamically sign a certificate when public keys are requested.</description>
+    </item>
+    
+    <item>
+      <title>ssoca ssh exec</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/ssh/exec-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/ssh/exec-cmd/</guid>
+      <description> ssoca ssh exec ... Connect to a remote SSH server
+Usage: ssoca [OPTIONS] ssh [ssh-OPTIONS] exec [exec-OPTIONS] [HOST] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [ssh command options] Establish SSH connections to remote servers: -s, --service= Service name (default: ssh) [$SSOCA_SERVICE] [exec command options] --skip-auth-retry Skip interactive authentication retries when logged out --exec= Path to the ssh binary --opt= Additional option to pass to ssh  </description>
+    </item>
+    
+    <item>
+      <title>ssoca ssh sign-public-key</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/ssh/sign-public-key-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/ssh/sign-public-key-cmd/</guid>
+      <description> ssoca ssh sign-public-key ... Create a certificate for a specific public key
+Usage: ssoca [OPTIONS] ssh [ssh-OPTIONS] sign-public-key [sign-public-key-OPTIONS] PATH Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [ssh command options] Establish SSH connections to remote servers: -s, --service= Service name (default: ssh) [$SSOCA_SERVICE] [sign-public-key command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+  </channel>
+</rss>

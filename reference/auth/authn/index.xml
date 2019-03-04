@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication on dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/reference/auth/authn/</link>
+    <description>Recent content in Authentication on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/reference/auth/authn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://dpb587.github.io/ssoca/reference/auth/authn/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/auth/authn/jwt/</guid>
+      <description>JSON Web Tokens Some authentication providers will use JWT to create a signed representation of a user&amp;rsquo;s authorization details. These tokens are typically valid for a relatively short period (24 hours) before the user needs to re-authenticate with the identity provider for an updated token.
+Options  private_key &amp;ndash; a PEM-formatted private key validity &amp;ndash; a duration for how long authentication tokens will be remembered (default 24h)  General Notes You can use the following to generate a new key for testing&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

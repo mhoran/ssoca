@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.1.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.2.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.3.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.4.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.5.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.6.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.7.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.7.1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.8.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.9.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.10.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.11.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.12.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.13.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.14.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.14.1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/v0.15.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/_menu/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/auth/authn/jwt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/auth/authn/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/auth/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/auth/authz/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/auth/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/certauth/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/auth/authn/uaa/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/server/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/server/deployment/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/dev/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/docroot/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/download/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/openvpn/external-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/ssh/external-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/server/ui/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/auth/authn/github/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/auth/authn/google/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/certauth/memory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/certauth/fs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/server/logging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/release/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/openvpn/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/ssh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/server/templating/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/auth/info-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/auth/login-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/auth/logout-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/download/get-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/download/list-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/info-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/list-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/rename-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/services-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/set-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/set-option-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/unset-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/env/update-client-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/openvpn/base-profile-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/openvpn/create-launchd-service-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/openvpn/create-onc-profile-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/openvpn/create-profile-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/openvpn/create-tunnelblick-profile-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/openvpn/exec-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/ssh/agent-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/ssh/exec-cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpb587.github.io/ssoca/reference/service/ssh/sign-public-key-cmd/</loc>
+  </url>
+  
+</urlset>

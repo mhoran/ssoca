@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/</link>
+    <description>Recent content on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>v0.1.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.1.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.1.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.2.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.2.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.2.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.3.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.3.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.3.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.4.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.4.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.4.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.5.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.5.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.5.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.6.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.6.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.6.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.7.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.7.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.7.0/</guid>
+      <description>Features
+ client can now upgrade itself from remote servers running 0.7.0+ (ssoca-client env update-client) cleanup default browser UI for better download/configuration/usage instructions embed version information in client (ssoca-client version) the server certauth setting for services is now optional, defaulting to certauth named default add Shimo and Viscosity to list of OS X paths used for finding an openvpn binary rename ssoca-client openvpn connect to ssoca-client openvpn exec (connect remains as an alias for now) Tunnelblick profiles are now named after environment (rather than generic openvpn, by default) restart openvpn connections if there are frequent, repeated authentications via management service (for cases where server has rotated credentials) client version is now reported in API requests for easier investigations from server logs  Fixes</description>
+    </item>
+    
+    <item>
+      <title>v0.7.1</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.7.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.7.1/</guid>
+      <description>Features
+ redirect authentication requests to canonical hostname set authentication cookies with domain, path, and secure attributes improve error messages when temporary authentication cookies are incorrect avoid caching API responses in browser UI  </description>
+    </item>
+    
+    <item>
+      <title>v0.8.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.8.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.8.0/</guid>
+      <description>Features
+ show a warning message on authentication result pages if an outdated client is detected easier installation of Tunnelblick profiles with the --install option  Bug Fixes
+ Tunnelblick profiles use the correct user home directory (caused errors when user did not match home path) Tunnelblick re-authentication prompts should not become detached from desktop interactions (caused hanging processes)  Development
+ switch to vendoring with dep update some vendored dependencies refactor ssh client for easier imports  </description>
+    </item>
+    
+    <item>
+      <title>v0.9.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.9.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.9.0/</guid>
+      <description>Features
+ Automatically validate the connection and CA certificate to an environment when configuring it, and show confirmation to the user Automatically prefix environment URLs with https:// if it is not already specified for slightly shorter commands Show slightly more descriptive HTTP error messages when requests fail (e.g. show 403 Forbidden instead of 403) Rename env add to env set to clarify it can be used for updating settings as well (env add currently remains as an alias) Rename env info to env services, and add env info for showing the environment name, URL, and banner Improved auth info behaviors:  Additional options to show only specific pieces of data (i.</description>
+    </item>
+    
+    <item>
+      <title>v0.10.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.10.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.10.0/</guid>
+      <description>Features
+ Add env rename command to change the name of an environment Build linux binaries using glibc instead of musl  Bug Fixes
+ Add sanity check in openvpn Tunnelblick profile generation to possibly avoid empty files  Development
+ Switch to go/1.10  </description>
+    </item>
+    
+    <item>
+      <title>v0.11.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.11.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.11.0/</guid>
+      <description>Features
+ Support running the server behind SSL-terminating proxy servers.  </description>
+    </item>
+    
+    <item>
+      <title>v0.12.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.12.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.12.0/</guid>
+      <description>Features
+ Support creating launchd services for OpenVPN services Support creating ONC profiles for OpenVPN services Support configuring auth callback bind addresses with auth.bind environment option Add Contains and Matches helpers for checking groups in templatized configuration values  Bug Fixes
+ Restore UAA authentication support  Development
+ Update to go1.11  </description>
+    </item>
+    
+    <item>
+      <title>v0.13.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.13.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.13.0/</guid>
+      <description>Features
+ Support overriding which UAA client prompts are required to authenticate  Bug Fixes
+ Fix UAA client used for authentication to be configurable Fix templating of Critical Options for SSH  </description>
+    </item>
+    
+    <item>
+      <title>v0.14.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.14.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.14.0/</guid>
+      <description>Features
+ Log additional request data for environments running behind proxies (#6). To enable detection of proxied client IPs, you must explicitly configure your proxy server IPs or CIDRs with the server.trusted_proxies list. When executing openvpn, add /usr/local/sbin to the list of fallback paths to search (#9). Improve the get command of downloads to support sending the file to STDOUT after a successful download. Improve CLI options handling of the --service flag so it can be passed next to the service rather than its subcommand.</description>
+    </item>
+    
+    <item>
+      <title>v0.14.1</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.14.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.14.1/</guid>
+      <description>Development
+ Update to go/1.11.5  </description>
+    </item>
+    
+    <item>
+      <title>v0.15.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.15.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.15.0/</guid>
+      <description>Bug Fixes
+ Build binaries with CGO_ENABLED=0 for improved compatibility.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dpb587.github.io/ssoca/_menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/_menu/</guid>
+      <description> Overview Client Installation Services  Authentication Document Root Download Environment OpenVPN SSH  Server Usage  Configuration Authentication Authorization Certificate Authorities Logging Frontend UI Deployment  Official Releases Development Notes View on GitHub  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dpb587.github.io/ssoca/reference/auth/authn/jwt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/auth/authn/jwt/</guid>
+      <description>JSON Web Tokens Some authentication providers will use JWT to create a signed representation of a user&amp;rsquo;s authorization details. These tokens are typically valid for a relatively short period (24 hours) before the user needs to re-authenticate with the identity provider for an updated token.
+Options  private_key &amp;ndash; a PEM-formatted private key validity &amp;ndash; a duration for how long authentication tokens will be remembered (default 24h)  General Notes You can use the following to generate a new key for testing&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Client Installation</title>
+      <link>https://dpb587.github.io/ssoca/reference/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/installation/</guid>
+      <description>Client Installation Most users will be executing the ssoca client binary from their workstations which require an initial setup.
+Dependencies First, users must install the ssoca client binary. After you install using one of the following methods, run ssoca version to verify. This only needs to happen once per workstation.
+Homebrew or Linuxbrew For users of Homebrew (macOS) or Linuxbrew, you may use the dpb587/homebrew-tap tap to install the latest official binaries.</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/configuration/</guid>
+      <description>Configuration The server is configured through a YAML file with several top-level sections.
+For a more full example, refer to the server.conf from the BOSH release.
+server The first section is server which configures the HTTPS listener&amp;hellip;
+server: # tls configuration certificate_path: ~ # PEM-formatted certificate; required private_key_path: ~ # PEM-formatted private key; required # bind settings host: 0.0.0.0 # default port: 18705 # default # optional redirects redirects: root: ~ # redirect of /; optional auth_failure: ~ # optional auth_success: ~ # optional # optionally configure proxies you expect to receive traffic from trusted_proxies: - 127.</description>
+    </item>
+    
+    <item>
+      <title>Deployment</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/deployment/</guid>
+      <description>Deployment BOSH Currently, the easiest way to operate ssoca is with BOSH using the ssoca release. Review the documentation in that repository. If you&amp;rsquo;re looking to get started, see dpb587/ssoca-starter-bosh-deployment for some default conventions.
+Standalone Alternatively, run ssoca-server and provide a path to the YAML server configuration file.</description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://dpb587.github.io/ssoca/reference/dev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/dev/</guid>
+      <description>Development Some notes to remember when working from source&amp;hellip;
+Commits Before committing, run the bin/pre-commit script to&amp;hellip;
+ regenerate fakes go fmt source files run all tests build all binaries regenerate client command docs  Review for unexpected changes before including them in your commit.
+Shortcuts Some shortcuts instead of the built-in go commands&amp;hellip;
+go run  bin/ssoca-client &amp;ndash; shortcut to run the client from source in any directory bin/ssoca-server &amp;ndash; shortcut to run the server from source in any directory  go build Run bin/build to build both client and server for all supported architectures and operating systems.</description>
+    </item>
+    
+    <item>
+      <title>External OpenVPN Server Configuration</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/external-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/external-configuration/</guid>
+      <description>External OpenVPN Server Configuration OpenVPN is often deployed with CA-based authentication, which is a prerequisite for this service. Ensure the following directives are configured on the OpenVPN server.
+ca_crt ... crl_pem ...  Renegotiation &amp;amp; Disconnects By default, OpenVPN attempts to renegotiate the data channel once every hour. Using short-lived certificates will cause the server to terminate the connection when renegotiation occurs (because the certificate has expired). Some clients may attempt to reconnect automatically, however there will typically be a brief interruption in network connectivity.</description>
+    </item>
+    
+    <item>
+      <title>External SSH Server Configuration</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/ssh/external-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/ssh/external-configuration/</guid>
+      <description>External SSH Server Configuration By default, OpenSSH relies on PAM and Public Key authentication (authorized_keys). To use this service, you must configure the OpenSSH server to trust users presenting a certificate which has been signed by a particular certificate authority.
+First, you should generate the public key of your certificate authority in OpenSSH format. You can use ssh-keygen and give it the private key of the certificate authority (this generates a public key and is not secret).</description>
+    </item>
+    
+    <item>
+      <title>Frontend UI</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/ui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/ui/</guid>
+      <description>Frontend UI A simple UI is included in the server/ui directory to support users directly browsing the the ssoca endpoint. It can be configured with the docroot service and supports showing initial configuration steps, binary downloads, and minor customizations.
+Parameters The following optional settings may be configured in the env.metadata to affect the appearance.
+ ui.color &amp;ndash; a known color name for the background of pages ui.link.(title) &amp;ndash; URL(s) to external documentation or resources which may be useful to the user ui.</description>
+    </item>
+    
+    <item>
+      <title>Logging</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/logging/</guid>
+      <description>Logging The server process emits logs to standard output in JSON format.
+Global Fields The following fields will be present on every message.
+ level &amp;ndash; severity of the message (i.e. DEBUG, INFO, WARN, ERROR, FATAL, PANIC) msg &amp;ndash; a brief summary describing the event which occurred (e.g. Signed ssh certificate) time &amp;ndash; time the message was logged in ISO8601 format (e.g. 2017-02-21T02:12:22Z)  HTTP Fields The following fields will be present on messages related to an HTTP request or response.</description>
+    </item>
+    
+    <item>
+      <title>Templating</title>
+      <link>https://dpb587.github.io/ssoca/reference/server/templating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/server/templating/</guid>
+      <description>Templating Some configuration values may support dynamic, runtime templating. Some services may use this to provide additional, user or request-specific customization. The following lookups are available in templated values.
+Configuration settings which support templating are noted with templatized in documentation.
+Context  Request (net/http.Request) &amp;ndash; the current request Token &amp;ndash; the current authentication token  Name &amp;ndash; personal name (if available) Email &amp;ndash; email address (if available) Username &amp;ndash; username (if available) Groups &amp;ndash; a list of scopes  Contains(string) &amp;ndash; check if a scope is available Matches(string) &amp;ndash; check if a scope matches the given pattern    Examples Using the ssh service as an example:</description>
+    </item>
+    
+    <item>
+      <title>ssoca auth info</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/auth/info-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/auth/info-cmd/</guid>
+      <description> ssoca auth info ... Show current authentication information
+Usage: ssoca [OPTIONS] auth info [info-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [info command options] --authenticated Show only whether the user is authenticated --id Show only the ID of the authenticated user --groups Show only the groups of the authenticated user  </description>
+    </item>
+    
+    <item>
+      <title>ssoca auth login</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/auth/login-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/auth/login-cmd/</guid>
+      <description> ssoca auth login ... Authenticate for a new token
+Usage: ssoca [OPTIONS] auth login [login-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [login command options] --skip-verify Skip verification of authentication, once complete  </description>
+    </item>
+    
+    <item>
+      <title>ssoca auth logout</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/auth/logout-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/auth/logout-cmd/</guid>
+      <description> ssoca auth logout ... Revoke an authentication token
+Usage: ssoca [OPTIONS] auth logout Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca download get</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/download/get-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/download/get-cmd/</guid>
+      <description> ssoca download get ... Get an artifact
+Usage: ssoca [OPTIONS] download [download-OPTIONS] get [get-OPTIONS] [FILE] [TARGET-FILE] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [download command options] Download environment artifacts: -s, --service= Service name (default: download) [$SSOCA_SERVICE] [get command options] --skip-auth-retry Skip interactive authentication retries when logged out [get command arguments] FILE: File name TARGET-FILE: Target path to write download (use &#39;-&#39; for STDOUT)  </description>
+    </item>
+    
+    <item>
+      <title>ssoca download list</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/download/list-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/download/list-cmd/</guid>
+      <description> ssoca download list ... List available artifacts
+Usage: ssoca [OPTIONS] download [download-OPTIONS] list [list-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [download command options] Download environment artifacts: -s, --service= Service name (default: download) [$SSOCA_SERVICE] [list command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env info</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/info-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/info-cmd/</guid>
+      <description> ssoca env info ... Show environment information
+Usage: ssoca [OPTIONS] env info Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env list</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/list-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/list-cmd/</guid>
+      <description> ssoca env list ... List all locally-configured environments
+Usage: ssoca [OPTIONS] env list Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env rename</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/rename-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/rename-cmd/</guid>
+      <description> ssoca env rename ... Set a new name for the environment
+Usage: ssoca [OPTIONS] env rename [NEW-NAME] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [rename command arguments] NEW-NAME: New environment name  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env services</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/services-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/services-cmd/</guid>
+      <description> ssoca env services ... Show current services available from the environment
+Usage: ssoca [OPTIONS] env services Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env set</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/set-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/set-cmd/</guid>
+      <description> ssoca env set ... Configure the connection to an environment (aliases: add)
+Usage: ssoca [OPTIONS] env set [set-OPTIONS] [URL] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [set command options] --ca-cert= Environment CA certificate path --skip-verify Skip verification of environment availability [set command arguments] URL: Environment URL  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env set-option</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/set-option-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/set-option-cmd/</guid>
+      <description> ssoca env set-option ... Set a local client option in the environment
+Usage: ssoca [OPTIONS] env set-option [set-option-OPTIONS] [NAME] [VALUE] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [set-option command options] --ca-cert= Environment CA certificate path [set-option command arguments] NAME: Client option name VALUE: Client option value (parsed as YAML)  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env unset</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/unset-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/unset-cmd/</guid>
+      <description> ssoca env unset ... Remove all configuration for an environment (aliases: remove)
+Usage: ssoca [OPTIONS] env unset Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env update-client</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/update-client-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/update-client-cmd/</guid>
+      <description> ssoca env update-client ... Download the latest client from the environment
+Usage: ssoca [OPTIONS] env update-client [update-client-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [update-client command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn base-profile</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/base-profile-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/base-profile-cmd/</guid>
+      <description> ssoca openvpn base-profile ... Show the base connection profile of the OpenVPN server
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] base-profile [base-profile-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [base-profile command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn create-launchd-service</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/create-launchd-service-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/create-launchd-service-cmd/</guid>
+      <description>ssoca openvpn create-launchd-service ... Create a launchd service
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-launchd-service [create-launchd-service-OPTIONS] [DESTINATION-DIR] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [create-launchd-service command options] --skip-auth-retry Skip interactive authentication retries when logged out --exec-ssoca= Path to the ssoca binary (default: ssoca) --name= Specific file name to use for *.</description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn create-onc-profile</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/create-onc-profile-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/create-onc-profile-cmd/</guid>
+      <description>ssoca openvpn create-onc-profile ... Create an ONC profile
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-onc-profile [create-onc-profile-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [create-onc-profile command options] --skip-auth-retry Skip interactive authentication retries when logged out --name= Specific network configuration name to use  Usage Details Chrome OS uses Open Network Configuration files for VPN settings.</description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn create-profile</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/create-profile-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/create-profile-cmd/</guid>
+      <description> ssoca openvpn create-profile ... Create and sign an OpenVPN configuration profile
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-profile [create-profile-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [create-profile command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn create-tunnelblick-profile</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/create-tunnelblick-profile-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/create-tunnelblick-profile-cmd/</guid>
+      <description>ssoca openvpn create-tunnelblick-profile ... Create a Tunnelblick profile
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] create-tunnelblick-profile [create-tunnelblick-profile-OPTIONS] [DESTINATION-DIR] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [create-tunnelblick-profile command options] --skip-auth-retry Skip interactive authentication retries when logged out --exec-ssoca= Path to the ssoca binary (default: ssoca) --name= Specific file name to use for *.</description>
+    </item>
+    
+    <item>
+      <title>ssoca openvpn exec</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/openvpn/exec-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/openvpn/exec-cmd/</guid>
+      <description> ssoca openvpn exec ... Execute openvpn to connect to the remote server (aliases: connect)
+Usage: ssoca [OPTIONS] openvpn [openvpn-OPTIONS] exec [exec-OPTIONS] [EXTRA...] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [openvpn command options] Establish OpenVPN connections to remote servers: -s, --service= Service name (default: openvpn) [$SSOCA_SERVICE] [exec command options] --skip-auth-retry Skip interactive authentication retries when logged out --exec= Path to the openvpn binary --reconnect Reconnect on connection disconnects --static-certificate Write a static certificate in the configuration instead of dynamic renewals --sudo Execute openvpn with sudo [exec command arguments] EXTRA: Additional arguments to pass to openvpn  </description>
+    </item>
+    
+    <item>
+      <title>ssoca ssh agent</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/ssh/agent-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/ssh/agent-cmd/</guid>
+      <description>ssoca ssh agent ... Start an SSH agent
+Usage: ssoca [OPTIONS] ssh [ssh-OPTIONS] agent [agent-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [ssh command options] Establish SSH connections to remote servers: -s, --service= Service name (default: ssh) [$SSOCA_SERVICE] [agent command options] --skip-auth-retry Skip interactive authentication retries when logged out --foreground Stay in foreground --socket= Socket path (ensure the directory has restricted permissions)  Usage Details This agent follows the ssh-agent protocol to dynamically sign a certificate when public keys are requested.</description>
+    </item>
+    
+    <item>
+      <title>ssoca ssh exec</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/ssh/exec-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/ssh/exec-cmd/</guid>
+      <description> ssoca ssh exec ... Connect to a remote SSH server
+Usage: ssoca [OPTIONS] ssh [ssh-OPTIONS] exec [exec-OPTIONS] [HOST] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [ssh command options] Establish SSH connections to remote servers: -s, --service= Service name (default: ssh) [$SSOCA_SERVICE] [exec command options] --skip-auth-retry Skip interactive authentication retries when logged out --exec= Path to the ssh binary --opt= Additional option to pass to ssh  </description>
+    </item>
+    
+    <item>
+      <title>ssoca ssh sign-public-key</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/ssh/sign-public-key-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/ssh/sign-public-key-cmd/</guid>
+      <description> ssoca ssh sign-public-key ... Create a certificate for a specific public key
+Usage: ssoca [OPTIONS] ssh [ssh-OPTIONS] sign-public-key [sign-public-key-OPTIONS] PATH Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [ssh command options] Establish SSH connections to remote servers: -s, --service= Service name (default: ssh) [$SSOCA_SERVICE] [sign-public-key command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+  </channel>
+</rss>

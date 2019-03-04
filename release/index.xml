@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Official Releases on dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/release/</link>
+    <description>Recent content in Official Releases on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/release/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>v0.1.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.1.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.1.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.2.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.2.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.2.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.3.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.3.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.3.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.4.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.4.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.4.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.5.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.5.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.5.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.6.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.6.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.6.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v0.7.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.7.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.7.0/</guid>
+      <description>Features
+ client can now upgrade itself from remote servers running 0.7.0+ (ssoca-client env update-client) cleanup default browser UI for better download/configuration/usage instructions embed version information in client (ssoca-client version) the server certauth setting for services is now optional, defaulting to certauth named default add Shimo and Viscosity to list of OS X paths used for finding an openvpn binary rename ssoca-client openvpn connect to ssoca-client openvpn exec (connect remains as an alias for now) Tunnelblick profiles are now named after environment (rather than generic openvpn, by default) restart openvpn connections if there are frequent, repeated authentications via management service (for cases where server has rotated credentials) client version is now reported in API requests for easier investigations from server logs  Fixes</description>
+    </item>
+    
+    <item>
+      <title>v0.7.1</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.7.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.7.1/</guid>
+      <description>Features
+ redirect authentication requests to canonical hostname set authentication cookies with domain, path, and secure attributes improve error messages when temporary authentication cookies are incorrect avoid caching API responses in browser UI  </description>
+    </item>
+    
+    <item>
+      <title>v0.8.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.8.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.8.0/</guid>
+      <description>Features
+ show a warning message on authentication result pages if an outdated client is detected easier installation of Tunnelblick profiles with the --install option  Bug Fixes
+ Tunnelblick profiles use the correct user home directory (caused errors when user did not match home path) Tunnelblick re-authentication prompts should not become detached from desktop interactions (caused hanging processes)  Development
+ switch to vendoring with dep update some vendored dependencies refactor ssh client for easier imports  </description>
+    </item>
+    
+    <item>
+      <title>v0.9.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.9.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.9.0/</guid>
+      <description>Features
+ Automatically validate the connection and CA certificate to an environment when configuring it, and show confirmation to the user Automatically prefix environment URLs with https:// if it is not already specified for slightly shorter commands Show slightly more descriptive HTTP error messages when requests fail (e.g. show 403 Forbidden instead of 403) Rename env add to env set to clarify it can be used for updating settings as well (env add currently remains as an alias) Rename env info to env services, and add env info for showing the environment name, URL, and banner Improved auth info behaviors:  Additional options to show only specific pieces of data (i.</description>
+    </item>
+    
+    <item>
+      <title>v0.10.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.10.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.10.0/</guid>
+      <description>Features
+ Add env rename command to change the name of an environment Build linux binaries using glibc instead of musl  Bug Fixes
+ Add sanity check in openvpn Tunnelblick profile generation to possibly avoid empty files  Development
+ Switch to go/1.10  </description>
+    </item>
+    
+    <item>
+      <title>v0.11.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.11.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.11.0/</guid>
+      <description>Features
+ Support running the server behind SSL-terminating proxy servers.  </description>
+    </item>
+    
+    <item>
+      <title>v0.12.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.12.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.12.0/</guid>
+      <description>Features
+ Support creating launchd services for OpenVPN services Support creating ONC profiles for OpenVPN services Support configuring auth callback bind addresses with auth.bind environment option Add Contains and Matches helpers for checking groups in templatized configuration values  Bug Fixes
+ Restore UAA authentication support  Development
+ Update to go1.11  </description>
+    </item>
+    
+    <item>
+      <title>v0.13.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.13.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.13.0/</guid>
+      <description>Features
+ Support overriding which UAA client prompts are required to authenticate  Bug Fixes
+ Fix UAA client used for authentication to be configurable Fix templating of Critical Options for SSH  </description>
+    </item>
+    
+    <item>
+      <title>v0.14.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.14.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.14.0/</guid>
+      <description>Features
+ Log additional request data for environments running behind proxies (#6). To enable detection of proxied client IPs, you must explicitly configure your proxy server IPs or CIDRs with the server.trusted_proxies list. When executing openvpn, add /usr/local/sbin to the list of fallback paths to search (#9). Improve the get command of downloads to support sending the file to STDOUT after a successful download. Improve CLI options handling of the --service flag so it can be passed next to the service rather than its subcommand.</description>
+    </item>
+    
+    <item>
+      <title>v0.14.1</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.14.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.14.1/</guid>
+      <description>Development
+ Update to go/1.11.5  </description>
+    </item>
+    
+    <item>
+      <title>v0.15.0</title>
+      <link>https://dpb587.github.io/ssoca/release/v0.15.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/release/v0.15.0/</guid>
+      <description>Bug Fixes
+ Build binaries with CGO_ENABLED=0 for improved compatibility.  </description>
+    </item>
+    
+  </channel>
+</rss>

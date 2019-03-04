@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication (auth) on dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/reference/service/auth/</link>
+    <description>Recent content in Authentication (auth) on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/reference/service/auth/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ssoca auth info</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/auth/info-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/auth/info-cmd/</guid>
+      <description> ssoca auth info ... Show current authentication information
+Usage: ssoca [OPTIONS] auth info [info-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [info command options] --authenticated Show only whether the user is authenticated --id Show only the ID of the authenticated user --groups Show only the groups of the authenticated user  </description>
+    </item>
+    
+    <item>
+      <title>ssoca auth login</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/auth/login-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/auth/login-cmd/</guid>
+      <description> ssoca auth login ... Authenticate for a new token
+Usage: ssoca [OPTIONS] auth login [login-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [login command options] --skip-verify Skip verification of authentication, once complete  </description>
+    </item>
+    
+    <item>
+      <title>ssoca auth logout</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/auth/logout-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/auth/logout-cmd/</guid>
+      <description> ssoca auth logout ... Revoke an authentication token
+Usage: ssoca [OPTIONS] auth logout Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    SSH (ssh) | dpb587/ssoca</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://dpb587.github.io/ssoca/normalize.min.css">
+
+<link rel="stylesheet" href="/ssoca/book.min.60f61c3922248f4d0720c4556699f36d8643d39368cf65ee808037435737093e.css">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dpb587.github.io/ssoca/reference/service/ssh/">
+<meta property="og:site_name" content="dpb587/ssoca" />
+<meta property="og:title" content="SSH (ssh)">
+
+
+  
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+        <h2 class="book-brand">
+  <a href="https://dpb587.github.io/ssoca/">dpb587/ssoca</a>
+</h2>
+        
+
+        
+          <ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/">Overview</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/installation/">Client Installation</a></li>
+<li>Services
+
+<ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/auth/">Authentication</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/docroot/">Document Root</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/download/">Download</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/env/">Environment</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/openvpn/">OpenVPN</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/service/ssh/">SSH</a></li>
+</ul></li>
+<li>Server Usage
+
+<ul>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/configuration/">Configuration</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/auth/authn/">Authentication</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/auth/authz/">Authorization</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/certauth/">Certificate Authorities</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/logging/">Logging</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/ui/">Frontend UI</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/server/deployment/">Deployment</a></li>
+</ul></li>
+<li><a href="https://dpb587.github.io/ssoca/release/">Official Releases</a></li>
+<li><a href="https://dpb587.github.io/ssoca/reference/dev/">Development Notes</a></li>
+<li><a href="https://github.com/dpb587/ssoca">View on GitHub</a></li>
+</ul>
+
+        
+
+        
+      </nav>
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="https://dpb587.github.io/ssoca/svg/menu.svg" />
+  </label>
+  <strong>
+    SSH (ssh)</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="ssh-ssh">SSH (<code>ssh</code>)</h1>
+
+<p>The SSH service is used to sign a user&rsquo;s public key for accessing an intentionally-configured SSH servers.</p>
+
+<h2 id="client-commands">Client Commands</h2>
+
+<p>The SSH workflows can be managed through <code>ssh</code> subcommands.</p>
+
+<ul>
+<li><code>agent</code> (<a href="https://dpb587.github.io/ssoca/reference/service/ssh/agent-cmd/">details</a>) &ndash; start an SSH agent</li>
+<li><code>exec</code> (<a href="https://dpb587.github.io/ssoca/reference/service/ssh/exec-cmd/">details</a>) &ndash; connect to a remote SSH server</li>
+<li><code>sign-public-key</code> (<a href="https://dpb587.github.io/ssoca/reference/service/ssh/sign-public-key-cmd/">details</a>) &ndash; create a certificate for a specific public key</li>
+</ul>
+
+<h2 id="server-configuration-options">Server Configuration Options</h2>
+
+<p>The following may be configured in the <code>options</code> section when configuring an <code>ssh</code> <a href="https://dpb587.github.io/ssoca/reference/server/configuration/#services">service</a>.</p>
+
+<ul>
+<li><strong><code>principals</code></strong> &ndash; an array of usernames to allow SSH sessions for (<a href="../../server/templating">templatized</a>)</li>
+<li><code>certauth</code> &ndash; the name of a configured certificate authority (default <code>default</code>)</li>
+<li><code>validity</code> &ndash; a <a href="https://golang.org/pkg/time/#ParseDuration">duration</a> of time for which certificates are signed for (default <code>2m</code>)</li>
+<li><code>critical_options</code> &ndash; a <em>hash</em> of specific settings further restricting connections to the SSH server
+
+<ul>
+<li><code>force-command</code> &ndash; a command which is forcefully executed on the SSH server (<a href="../../server/templating">templatized</a>)</li>
+<li><code>source-address</code> &ndash; a CSV list of source addresses in CIDR format which certificates can come from for authentication (<a href="../../server/templating">templatized</a>)</li>
+</ul></li>
+<li><code>extensions</code> &ndash; an <em>array</em> of session features for the server to enforce on the connection (default all)
+
+<ul>
+<li><code>permit-X11-forwarding</code></li>
+<li><code>permit-agent-forwarding</code></li>
+<li><code>permit-port-forwarding</code></li>
+<li><code>permit-pty</code></li>
+<li><code>permit-user-rc</code></li>
+</ul></li>
+</ul>
+
+<p><strong>Propagated Client Options</strong></p>
+
+<ul>
+<li><code>client</code> &ndash; a hash of settings influencing client behavior
+
+<ul>
+<li><code>host</code> &ndash; the remote host of the SSH server</li>
+<li><code>port</code> &ndash; the remote port of the SSH server (default <code>22</code>)</li>
+<li><code>user</code> &ndash; the remote user to authenticate as (<a href="../../server/templating">templatized</a>)</li>
+<li><code>public_key</code> &ndash; the public key of the remote SSH server (requires <code>host</code>)</li>
+</ul></li>
+</ul>
+
+<p><em>Tip</em>: the SSH server must be configured to trust certificates signed by ssoca (<a href="https://dpb587.github.io/ssoca/reference/service/ssh/external-configuration/">learn more</a>).</p>
+
+<h2 id="general-notes">General Notes</h2>
+
+<ul>
+<li>certificates are only used for authentication (sessions are not disconnected once the certificates expire)</li>
+</ul>
+
+<h2 id="known-issues">Known Issues</h2>
+
+<ul>
+<li>A recent OS X update introduces a new version of <code>ssh</code> which does not correctly check for supported algorithms. Using <code>brew install openssh</code> to install a newer version seems to fix the issue (<a href="https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/1790963">related</a> <a href="http://bugzilla.mindrot.org/show_bug.cgi?id=2799">bug</a>).</li>
+</ul>
+</article>
+
+      
+<div class="align-center book-git-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/dpb587/ssoca/edit/master/docs/reference/service/ssh/_index.md" target="_blank" rel="noopener">
+      <img src="https://dpb587.github.io/ssoca/svg/code-fork.svg" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+    </div>
+
+    
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#ssh-ssh">SSH (<code>ssh</code>)</a>
+<ul>
+<li><a href="#client-commands">Client Commands</a></li>
+<li><a href="#server-configuration-options">Server Configuration Options</a></li>
+<li><a href="#general-notes">General Notes</a></li>
+<li><a href="#known-issues">Known Issues</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+  </main>
+
+  
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37464314-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    if ('dpb587.github.io' != window.location.hostname) return;
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+
+</html>

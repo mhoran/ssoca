@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Foundry UAA (uaa) authentication on dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/reference/auth/authn/uaa/</link>
+    <description>Recent content in Cloud Foundry UAA (uaa) authentication on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/reference/auth/authn/uaa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Environment (env) on dpb587/ssoca</title>
+    <link>https://dpb587.github.io/ssoca/reference/service/env/</link>
+    <description>Recent content in Environment (env) on dpb587/ssoca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dpb587.github.io/ssoca/reference/service/env/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ssoca env info</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/info-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/info-cmd/</guid>
+      <description> ssoca env info ... Show environment information
+Usage: ssoca [OPTIONS] env info Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env list</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/list-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/list-cmd/</guid>
+      <description> ssoca env list ... List all locally-configured environments
+Usage: ssoca [OPTIONS] env list Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env rename</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/rename-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/rename-cmd/</guid>
+      <description> ssoca env rename ... Set a new name for the environment
+Usage: ssoca [OPTIONS] env rename [NEW-NAME] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [rename command arguments] NEW-NAME: New environment name  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env services</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/services-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/services-cmd/</guid>
+      <description> ssoca env services ... Show current services available from the environment
+Usage: ssoca [OPTIONS] env services Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env set</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/set-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/set-cmd/</guid>
+      <description> ssoca env set ... Configure the connection to an environment (aliases: add)
+Usage: ssoca [OPTIONS] env set [set-OPTIONS] [URL] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [set command options] --ca-cert= Environment CA certificate path --skip-verify Skip verification of environment availability [set command arguments] URL: Environment URL  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env set-option</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/set-option-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/set-option-cmd/</guid>
+      <description> ssoca env set-option ... Set a local client option in the environment
+Usage: ssoca [OPTIONS] env set-option [set-option-OPTIONS] [NAME] [VALUE] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [set-option command options] --ca-cert= Environment CA certificate path [set-option command arguments] NAME: Client option name VALUE: Client option value (parsed as YAML)  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env unset</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/unset-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/unset-cmd/</guid>
+      <description> ssoca env unset ... Remove all configuration for an environment (aliases: remove)
+Usage: ssoca [OPTIONS] env unset Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message  </description>
+    </item>
+    
+    <item>
+      <title>ssoca env update-client</title>
+      <link>https://dpb587.github.io/ssoca/reference/service/env/update-client-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpb587.github.io/ssoca/reference/service/env/update-client-cmd/</guid>
+      <description> ssoca env update-client ... Download the latest client from the environment
+Usage: ssoca [OPTIONS] env update-client [update-client-OPTIONS] Application Options: --config= Configuration file path (default: ~/.config/ssoca/config) [$SSOCA_CONFIG] -e, --environment= Environment name [$SSOCA_ENVIRONMENT] --log-level= Log level (default: WARN) [$SSOCA_LOG_LEVEL] Help Options: -h, --help Show this help message [update-client command options] --skip-auth-retry Skip interactive authentication retries when logged out  </description>
+    </item>
+    
+  </channel>
+</rss>
